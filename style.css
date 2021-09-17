@@ -1,0 +1,103 @@
+body{
+    text-align: center;
+    background-color: yellow;    
+}
+
+main{
+    padding: 0 15%;
+}
+
+nav{
+    padding: 15%;
+    height: 100px;
+}
+
+.nav-link{
+    font-size: 1.3rem;
+    margin: 0 10px;
+    text-transform: uppercase;
+}
+
+header, article{
+    margin: 50px 0;
+}
+
+article{
+    padding: 0 10%;
+}
+
+h2{
+    background-color: #53B8BB;
+    color: white ;
+    padding: 2%;
+}
+
+p{
+    margin: 10px 0;
+}
+
+img{
+    margin: 20px;
+    border: #53B8BB solid 10px;
+}
+
+.p-background-color{
+    background-color: #212529;
+    padding: 3%;
+    color: white;
+}
+
+.print-message{
+    display: none;
+}
+
+footer{
+    background-color: #212529;
+    color: white;
+    padding: 2% 15%;
+}
+
+@media print{
+    body{
+        background-color: none;
+        text-align: left;
+    }
+    main{
+        padding: 0;
+    }
+    nav{
+        display: none;
+    }
+    h2{
+        background-color: none;
+        color: black;
+        margin: 0;
+    }
+    article{
+        margin: 0;
+        text-align: left;
+    }
+    .p-background-color{
+        background-color: none;
+        padding: 3%;
+        color: black;
+        text-align: left;
+    }
+    img{
+        margin: none;
+        border: none;
+        width: 100px;
+
+    }
+    footer{
+        background-color: none;
+        color: black;
+        padding: 0;
+        text-align: left;
+        margin-top: 50px;
+    }
+    .print-message{
+        display: inline;
+        text-align: left;
+    }
+}
